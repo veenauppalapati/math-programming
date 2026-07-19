@@ -11,7 +11,14 @@ def evaluate(x):
 
 
 def main():
-    x = int(input('Please enter a value for x to evaluate the expression 3x-(x-7) = 4x-5 :  '))
-    evaluate(x)
+    
+
+    continue_program = 'Y'
+
+    while continue_program != 'N':
+        x = int(input('Please enter a value for x to evaluate the expression 3x-(x-7) = 4x-5 :  '))
+        evaluate(x)
+        continue_program = input('Would you like to continue the program.  Enter "Y" to continue and "N" to exit: ')
+
 
 main()
